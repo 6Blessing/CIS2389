@@ -4,8 +4,13 @@ public class Fraction{
    
    public Fraction(int n, int d){
       //TODO: Finish this constructor
+      if (d == 0)
+      throw new IllegalArgumentException("denominator cannot be zero");
    }
-   
+      numerator = n;
+      denominator = d;
+}
+
    public Fraction(int n){
       //TODO: Finish this constructor so that n is over 1 for a whole number
    }
