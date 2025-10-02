@@ -2,23 +2,20 @@ public class Fraction{
    private int numerator;
    private int denominator;
    
-   public Fraction(int n, int d){
-      //TODO: Finish this constructor
-      if (d == 0)
+ public Fraction(int n, int d){
+      if (d == 0){
       throw new IllegalArgumentException("denominator cannot be zero");
    }
-      numerator = n;
-      denominator = d;
+ this.numerator = n;
+ this.denominator = d;
 }
-
-   public Fraction(int n){
-      //TODO: Finish this constructor so that n is over 1 for a whole number
+  public Fraction(int n){
+    this(n,1);
    }
    
-   /*
-     TODO: create the required method so that when 
-     a Fraction object is part of a print() then output
-     is numerator/denominator.
-   */
-   //public...
+@Override
+public String toString(){
+   return this.numerator + "/" + this.denominator;
 }
+}
+//i deleted all of the TODO comments***
