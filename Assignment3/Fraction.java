@@ -10,6 +10,7 @@ public class Fraction{
    private int numerator;
    private int denominator;
    
+<<<<<<< HEAD
  public Fraction(int n, int d){
       if (d == 0){
       throw new IllegalArgumentException("denominator cannot be zero");
@@ -48,3 +49,21 @@ public String toString(){
       }}
    
       
+=======
+   public Fraction(int n, int d){
+      //TODO: Finish this constructor
+   }
+   
+   public Fraction(int n){
+      //TODO: Finish this constructor so that n is over 1 for a whole number
+   }
+   
+   /*
+     TODO: create the required method so that when 
+     a Fraction object is part of a print() then output
+     is numerator/denominator.
+   */
+   //public...
+      
+}
+>>>>>>> 0e7cc86663604b9d36aaac2012d20c5e7a9b148d
