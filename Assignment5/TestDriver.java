@@ -24,13 +24,13 @@ public class TestDriver{
          try{
             pfs[i] = new ProperFraction(irfs[i].getNumerator(), irfs[i].getDenominator());
             i++;
-         }catch(ProperFractionException e){
+         } catch(ProperFractionException e){
             System.out.println("Could not convert "+irfs[i]+" to proper fraction.");
             i++;
          }
       }
       
-      System.out.print("ImproperFraction array = "+Arrays.toString(irfs)+"\nSoring array...");
+      System.out.print("ImproperFraction array = "+ Arrays.toString(irfs)+"\nSoring array...");
       Arrays.sort(irfs);
       System.out.println("It is now "+ Arrays.toString(irfs));
       
